@@ -109,6 +109,138 @@ section.porque_nos > .Center> p{
     letter-spacing: 0px;
     
 }
+section.cta{
+    background-image: url(../images/BANNER\ IMG.png);
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+section.cta h2, section.cta p{
+    width: 100%;
+    padding-top: 10px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+section.cta h2{
+    padding-top: 30px;
+    font-size: 42px;
+}
+#cnt_bnt{
+    background-color: #FFDD33;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: #0F3FD3;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.Beneficios_box{
+    width: 45%;
+    margin-top: 70px;
+}
+.Beneficios_box h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.Beneficios_box img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+} 
+.Beneficios_box p{
+    vertical-align: middle;
+    font-size: 14px;
+}  
+.Beneficios_box span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+.img_beneficios{
+    width: 55%;
+    margin-top: 10px;
+}
+.img_beneficios img{
+    max-width: 100%;
+}
+#cnt_bnt2{
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #255AFF;
+    color: white;
+}
+section.Depoimentos {
+    background-color: #FBFCFE;
+    padding: 40px 0;
+}
+section.Depoimentos h1{
+    text-align: center;
+    font-size: 36px;
+}
+.container-slider{
+    overflow: hidden;
+}
+.Container_slider_single{
+    float: left;
+    background-color:white;
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+}
+.Container_slider_single p {
+    margin:15px 0;
+    color:#7E92AC;
+    font-size: 14px;
+}
+.slick-slide {
+    margin-left:27px;
+
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px;
+   
+  }
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:40px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
 
 @media screen and (max-width: 760px) {    /*Mobile First*/
     
@@ -128,4 +260,18 @@ section.porque_nos > .Center> p{
         max-width: 300px;
         width: 100%;
     }
+    .Beneficios_box, .img_beneficios{
+        width: 100%;
+    }
+    .Beneficios_box h2{
+        text-align: center;
+    }
+    .Centerbnt{
+        text-align: center;
+    }
+    #cnt_bnt2{
+        padding: 3% 20%;
+    }
+  
+
 }
