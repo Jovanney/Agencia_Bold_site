@@ -43,12 +43,12 @@ section.Main{
 }
 
 #contactbtn{
-    background-color: #0F3FD3;
     padding: 7px 10px;
     border-radius: 10px;
 }
 #contactbtn:hover{
     border: 0;
+    background-color: #0F3FD3;
 }
 .Mockup{
     color: white;
@@ -66,4 +66,66 @@ section.Main{
 
 .Mockup img{
     max-width: 100%;
+}
+section.Marcas{
+    padding: 70px 0;
+}
+section.Marcas img{
+    width: 20%;
+}
+section.porque_nos{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+section.porque_nos > .Center> h2{
+    font-size: 44px;
+     text-align: center;
+     width: 100%;
+}
+section.porque_nos > .Center> p{
+    font-size: 14px;
+    color: #7E92AC;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+}
+.Diferenciais{
+    display: flex;
+    margin-top: 10px;
+}
+.Box-Diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+.Box-Diferenciais p {
+    color: #7E92AC;
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    letter-spacing: 0px;
+    
+}
+
+@media screen and (max-width: 760px) {    /*Mobile First*/
+    
+    .Diferenciais{
+        flex-wrap: wrap;
+    }
+    .Box-Diferenciais{
+        width: 100%;
+        margin-right: 0px;
+    }
+    section.Marcas > .Center{
+        flex-wrap: nowrap;
+        flex-direction: column; 
+        align-items: center;  
+    }
+    section.Marcas img{
+        max-width: 300px;
+        width: 100%;
+    }
 }
