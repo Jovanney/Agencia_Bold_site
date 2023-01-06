@@ -37,6 +37,39 @@ section.Main{
 .Itens-menu a:hover{
     border-bottom: 2px solid #FFDD33;
 }
+.Itens-menu-Mobile{
+    display: none;
+    width: 50%;
+    text-align: right;
+    cursor: pointer;
+}
+.Menu_Mobile{
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 76px;
+    width: 100%;
+    height: 100%;
+    background-color: #255aff;
+    text-align: center;
+
+}
+.show{
+    opacity: 1;
+}
+.Menu_Mobile a{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    width: 100%;
+}
+.Menu_Mobile a:hover{
+    background-color: #0F3FD3;
+}
+
 .Menu{
     display: flex;
     width: 100%;
@@ -242,8 +275,93 @@ li.slick-active button{
 
 .slick-slide:focus { outline: none; }
 
-@media screen and (max-width: 760px) {    /*Mobile First*/
+.Contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.Contato h1{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+} 
+.Contato input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    background-color: #C3CCE8;
+    color: #7E92AC;
+    border: 1px solid #C3CCE8;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.Contato input[type="email"]{
+    width: 100%;
+    height: 40px;
+    background-color: #C3CCE8;
+    color: #7E92AC;
+    border: 1px solid #C3CCE8;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.Contato input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background-color: #255AFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
     
+}
+#Mensagem{
+    height: 130px;
+    color: #7E92AC;
+    border: 1px solid #C3CCE8;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.Contato form{
+    width: 100%;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #255AFF;
+    color: white;
+    padding: 30px 0;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Text_footer{
+    font-weight: bolder;   
+}
+footer > .Center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 760px) {    
+    
+    .Itens-menu-Mobile{
+        display: block;
+    }
+    .Menu_Mobile{
+        display: block;
+    }
+    .Itens-menu{
+        display: none;
+    }
+
     .Diferenciais{
         flex-wrap: wrap;
     }
@@ -272,6 +390,15 @@ li.slick-active button{
     #cnt_bnt2{
         padding: 3% 20%;
     }
-  
+    #hiden_on_mobile{
+        display: none;
+    }
+
+    .Text_footer{
+        width: 100%;
+        text-align: center;
+    }
+    
+
 
 }
