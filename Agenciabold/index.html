@@ -26,7 +26,7 @@
                 </div><!--ItensMenu-->
 
                 <div class="Itens-menu-Mobile">
-                    <img style="z-index: 1;" src="images/MENU MOBILE.svg" alt="">
+                    <img id="bntmobile" src="images/MENU MOBILE.svg" alt="">
                     <div class="Menu_Mobile">
                         <a href="#" style="margin-top: 60px;">Início</a>
                         <a href="#">Por que Nós</a>
@@ -201,7 +201,20 @@
         });
     </script>
     <script>
-        
+        var menubtn = document.querySelector(".Itens-menu-Mobile img")
+        menubtn.addEventListener("click",()=>{
+            let itensmenu = document.querySelector(".Menu_Mobile")
+            if (itensmenu.classList.contains('show')) {
+                document.getElementById("bntmobile").src="images/MENU MOBILE.svg";
+                itensmenu.classList.remove("show")
+                itensmenu.classList.add('hide')    
+            }
+            else{
+                itensmenu.classList.remove("hide")
+                itensmenu.classList.add('show')
+                document.getElementById("bntmobile").src="images/MENU_CLOSE.svg";
+            } 
+        });
     </script>
 
 </body>

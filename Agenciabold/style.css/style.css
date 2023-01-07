@@ -45,7 +45,7 @@ section.Main{
 }
 .Menu_Mobile{
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
     position: absolute;
     left: 0;
     top: 76px;
@@ -57,6 +57,9 @@ section.Main{
 }
 .show{
     opacity: 1;
+}
+.hide{
+    opacity: 0;
 }
 .Menu_Mobile a{
     display: block;
